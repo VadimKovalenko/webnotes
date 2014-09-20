@@ -1,0 +1,90 @@
+#first_wrapper{
+	position: absolute;
+	top: 400px;
+	width: 100%;
+	height: 320px;
+	*border: 2px solid red;
+}
+
+#center_wrapper{
+	position: relative;
+	*border: 1px solid green;
+	height: 320px;
+	width: 1528px;
+	margin: 0 auto;
+}
+
+#second_wrapper_1{
+	height: 325px;
+	*border: 1px solid yellow;
+	width: 600px;
+	left: 0;
+	float: left;
+}
+
+#second_wrapper_2{
+	position: relative;
+	height: 325px;
+	*border: 1px solid black;
+	width: 320px;
+	float: left;
+	margin: 0 auto;
+}
+
+#second_wrapper_3{
+	height: 325px;
+	*border: 1px solid yellow;
+	width: 600px;
+	right: 0;
+	float: left;
+}
+
+.notes{
+	width: 320px;
+	height: 320px;
+	box-shadow: 2px 2px 5px grey;	
+}
+
+#note_left{
+	position: relative;
+	left: 0px;
+	background-color: #fbf6a7;/*yellow*/
+	opacity: 0;
+	float: left;
+}
+
+#note_center{
+	position: relative;
+	*margin: 0 auto;
+	background-color: #c5a5cf;/*pink*/
+	opacity: 0;
+}
+
+#note_right{
+	position: relative;
+	left: 280px;
+	background-color: #badbab;/*green*/
+	opacity: 0;
+	float: left;
+}
+
+#note_left:hover{
+	background-image: url(../images/note_left.png);
+	background-size: cover;
+	color: white;
+	*background-color: #a0c3ff;/*blue*/
+}
+
+#note_center:hover{
+	background-image: url(../images/note_center.png);
+	background-size: cover;
+	*background-color: #f8b39b;/*orange*/
+	color: white;	
+}
+
+#note_right:hover{
+	background-image: url(../images/note_right.png);
+	background-size: cover;
+	*background-color: #ed9d97/*red*/;
+	color: white;	
+}

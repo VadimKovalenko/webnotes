@@ -1,0 +1,308 @@
+html{
+	min-height: 100%; 
+}
+
+body {
+	*background-image: url(../images/polygon.png);
+	background-size: cover;
+	*background-color: #f2f2f2;
+	height: 100%;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+	color: white;
+	box-shadow: 2px 2px 5px #333;
+}
+
+footer{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	margin-top: -50px;
+	background-color: #4151a3;
+}
+
+form {
+	color: black;
+}
+
+select {
+	width: 50px;
+}
+
+option:hover {
+	border: 1px solid black;
+	background-color: white;
+}
+
+#greetings {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	float: right;
+}
+
+#logout {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	float: right;
+}
+
+#create_note{
+	cursor: pointer;
+	width: 300px;
+	height: 50px;
+	background-color: #fbf6a7;	
+}
+
+#create_note:hover{
+	background-color: #db4437;	
+}
+
+#create_note p{
+	text-align: center;
+	color: #333;
+	font-family: IntriqueScript;
+	font-size: 35px;
+}
+
+#create_note p:hover{
+	color: white;
+}
+
+#add_data{
+	width: 300px;
+	height: 400px;
+	background-color: #333;
+	display: none;
+	float: left;
+	*box-shadow: 2px 2px 5px #fbf6a7;	
+}
+
+#attention_msg {
+	height: 15px;
+	color: #db4437;
+	font-weight: bold;
+	text-align: center;
+}
+
+#note_text{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 260px;
+	height: 260px;
+}
+
+#color_set{
+	margin-top: 20px;
+}
+
+#hero_img_wrapper {
+	position: absolute;
+	width: 100%;	
+}
+
+#hero_img{
+	position: relative;
+	margin: 0 auto;
+	top: 50px;
+	width: 150px;
+	height: 200px;
+	background: url(../images/logo_webnotes_small.png) no-repeat;
+	background-size: cover;
+}
+
+.hero_logo{
+	margin-top: 70px;
+	text-align: center;
+}
+
+.note_description {
+	position: absolute;
+	text-align: center;
+	padding: 20%;
+	font-weight: bold;
+}
+
+#note_color > #orange {
+	background: #f8b39b;
+}
+
+#note_color > #red {
+	background: #ed9d97;
+}
+
+#note_color > #yellow {
+	background: #fbf6a7;
+}
+
+#note_color > #green {
+	background: #badbab;
+}
+
+#note_color > #blue {
+	background: #a0c3ff;
+}
+
+#note_color > #purple {
+	background: #c5a5cf;
+}
+
+#note_color > #pink {
+	background: #ffb6c1;
+}
+
+#text_color{
+	color: white;
+	font-size: 14px;	
+	margin-left: 20px;
+}
+
+#submit_note{
+	margin-left: 20px;
+	margin-top: 20px;
+	background: #db4437;
+	border: 1px solid #db4437;
+	color: #fff;
+}
+
+#log_in_button{
+	background: #db4437;
+	border: 1px solid #db4437;
+	color: #fff;
+}
+
+.note_wrapper{
+	*border: 1px solid black;
+	width: 200px;
+	height: 220px;
+	float: left;
+	margin: 0px 10px 10px 10px;
+}
+
+.thumbtack_wrapper{
+	position: relative;
+	top: 20px;
+	margin-left: 80px;
+	width: 52px;
+	height: 39px;
+	*border: 1px solid black;
+	float: left;
+	*background-image: url(../images/thumbtack_7.png);
+	background-size: cover;
+}
+
+.user_note {
+	width: 200px;
+	height: 200px;
+	float: left;
+	/*margin: 20px 10px 20px 10px;*/
+	box-shadow: 3px 3px 10px black;
+} 
+
+.text_wrapper{
+	top: 25px;
+	height: 147px;
+	/*border: 1px solid black;*/
+}
+
+.note_text{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	top: 10px;
+	margin-left: 10px;	
+	width: 180px;
+	word-break: break-all;
+}
+
+.date_wrapper{
+	padding-left: 10px;
+	/*border: 1px solid black;*/	
+}
+
+.note_date{
+	color: black;
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+.button_wrapper{
+	width: 45px;
+	height: 22px;
+	margin-left: 160px;
+	/*border: 1px solid black;*/
+}
+
+.lock_form{
+	width: 20px;
+	float: right;
+}
+
+.delete_form{
+	width: 20px;
+	float: right;
+}
+
+.delete_note{
+	background-image: url(../images/cross.png);
+	background-repeat: no-repeat;
+	background-size: 8px;
+	background-position: 2.5px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	border: none;	
+}
+
+.delete_note:hover{
+	background-image: url(../images/cross_hover.png);
+}
+
+.lock_note{
+	background-image: url(../images/lock.png);
+	background-repeat: no-repeat;
+	background-size: 8px;
+	background-position: 2.3px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;	
+	border: none;
+}
+
+.lock_note:hover{
+	background-image: url(../images/lock_hover.png);
+}
+
+.error_data{
+	color: red;
+}
+
+#login{
+	margin-top: 10px;
+	float: right;
+	margin-right: 20px;
+	color: black;
+}
+
+/*footer{
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	height: 50px;
+	background-color: #4151a3;
+}*/
+
+.error_data{
+	text-align: center;
+	/*visibility: hidden;*/
+}
+
+.created{
+	margin: 12px;
+}

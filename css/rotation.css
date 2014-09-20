@@ -1,0 +1,26 @@
+/* 
+ * rotation
+ */
+.user_note:nth-child(even) {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.user_note:nth-child(odd) {
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+.user_note:nth-child(3n) {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	transform: rotate(1deg);
+}

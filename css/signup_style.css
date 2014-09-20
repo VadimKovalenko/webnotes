@@ -1,0 +1,60 @@
+body {
+	background-color: #f2f2f2;
+	color: #fff;
+	color: #333;
+}
+
+.enter_your_data{
+	margin: 80px 0px 0px 0px;
+	text-align: center;
+	font-family: IntriqueScript;
+	font-size: 30px; 
+}
+
+form {
+	margin: 0 auto;
+	width: 320px;
+	height: 320px;
+	top: 50px;
+	background-color: #db4437;
+	color: white;
+	box-shadow: 2px 2px 5px #333;
+	font: -webkit-small-control;
+}
+
+label  {
+	border: none;
+	position: relative;	
+	float: left;
+	width: 140px;
+	height: 20px;
+	margin: 5px 5px 5px 20px;
+}
+
+legend{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-weight: bold;		
+}
+
+input[type="text"], input[type="password"]{
+	position: relative;
+	float: right;
+	margin: 0px 20px 5px 0px;
+	width: 40%;
+}
+
+
+input[type="submit"] {
+	position: relative;
+	background-color: #fbf6a7;
+	border: none;
+	height: 25px;
+	width: 80px;
+	cursor: pointer;
+	top: 185px;
+	right: 15%;
+	font-weight: bold;	
+}
