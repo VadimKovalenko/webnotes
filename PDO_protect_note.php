@@ -28,7 +28,9 @@ if (isset($_POST['backward'])) {
 if (isset($_POST['note_password_submit'])) {
 		$note_password_1 = trim($_POST['pass_1']);
 		$note_password_2 = trim($_POST['pass_2']);
-		if ($note_password_1 == $note_password_2) {
+		//regular expression for password
+		$regexp = preg_match("/^[0-9]+$/", $note_password_1);
+		if ($note_password_1 == $note_password_2 && $regexp) {
 			$query3 = "UPDATE " . $_SESSION['username'] ."_table SET note_status  = '2', note_password = '$note_password_2' WHERE table_id = ".$_POST['table_identifier']."";
 			$DBH->query($query3);
 			// Redirect to the home page

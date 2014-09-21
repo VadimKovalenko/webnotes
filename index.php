@@ -28,10 +28,8 @@
 </style>
 </head>
 <body>
-	<header>
-	<?php
-	// Show the navigation menu
-	//require_once('PDO_login.php');
+<header>
+<?php
 // Start the session
 session_start();
 // Clear the error message
