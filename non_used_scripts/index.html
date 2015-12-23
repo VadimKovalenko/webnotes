@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<title>WebNotes</title>
+<head>
+<meta charset = "utf-8">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href = "css/style.css" rel = "stylesheet">
+<script src="scripts/jquery-1.6.2.min.js"></script>
+</head>
+<body>
+	<header>
+				<!--Log in form-->
+				<form method = "post" id = "login" action>
+					<input type="text" name="username" value="<?php if (!empty($user_username)) echo $user_username; ?>" placeholder = "username"/>
+					<input type="password" name="password" placeholder = "password"/>
+					<input type="submit" value="Log In" name="submit" />
+					<a href = "signup.php">Sign Up</a>
+				</form>		
+		<div id = "create_note">
+			<p>Create new note</p>
+		</div>
+		<div id = "add_data">
+				<!--Add a new note form-->
+				<form method = "post" action>
+					<textarea name = "note_text" placeholder = "Your text" id = "note_text"></textarea>
+						<div id = "color_set">
+							<span id = "text_color">Type the note color	&nbsp  &nbsp </span>
+							<input type = "color" name = "note_color"/>
+						</div>
+					 <input type="submit" value="Add note" name="submit_note" id = "submit_note"/>	
+				</form>
+		</div>	
+	</header>
+	<footer>
+	</footer>
+		<script>
+			$(document).ready(function(){
+				$("#create_note").click(function() {
+					$("#add_data").slideToggle("slow");
+				});
+			});
+		</script>	
+</body>
+</html>

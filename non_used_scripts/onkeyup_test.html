@@ -1,0 +1,27 @@
+<!doctype html>
+<title>Onkeyup test</title>
+<html>
+<head>
+	<style>
+		#count_char_textarea {
+			width: 200px;
+			height: 300px;
+		}
+	</style>	
+</head>
+<body>
+<textarea id = "count_char_textarea" onchange="countChar()" onkeyup="countChar()" maxlength = "50"></textarea>
+</body>
+<!--<script src = "jquery.js"></script>-->
+<script>
+	function countChar() {
+	     	var count_char_textarea =  document.getElementById("count_char_textarea");
+			x = count_char_textarea.value.length;
+			if (x == "50") {
+			alert ("You have typed maximum symbols!");
+			count_char_textarea.style.border = "1px solid red";
+				}
+			}
+	     	//нажата клавиша enter - здесь ваш код			    
+</script>
+</html>

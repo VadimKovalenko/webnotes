@@ -1,9 +1,7 @@
 <?php
+header('Content-type: text/html; charset=utf-8');
   // Start the session
   require_once('startsession.php');
-  
-  /*// Show the navigation menu
-  require_once('main_menu.php');*/
 ?> 
 <!doctype html>
 <html>
@@ -13,7 +11,8 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link href = "css/style.css" rel = "stylesheet">
 <link href = "css/lock_note.css" rel = "stylesheet">
-<link href = "css/animation_style.css" rel = "stylesheet">
+<!--<link href = "css/animation_style.css" rel = "stylesheet">-->
+<link href = "css/animation_style_transition.css" rel = "stylesheet">
 <!--<link href = "css/rotation.css" rel = "stylesheet">-->
 <script src="scripts/jquery-1.6.2.min.js"></script>
 <script src = "scripts/password_validation.js"></script>
@@ -101,6 +100,7 @@ if (!isset($_SESSION['user_id'])) {
 						<h3 class = "note_description">Save information</h3>
 					</div>
 			</div >
+			<div class = "clear: both"></div>
 			<div id = "second_wrapper_2">
 					<div class = "notes" id = "note_center">
 						<h3 class = "note_description">Protect your most important data</h3>					
@@ -111,11 +111,11 @@ if (!isset($_SESSION['user_id'])) {
 						<h3 class = "note_description">Create as many notes as you like</h3>					
 					</div>
 			</div>
-		</div>		
+		</div>
 	</div>
-	<footer>
+	<!--<footer>
 		<p class = "created">Created by <a href = "https://www.facebook.com/vadim.blacksmith" target="_blank">Vadim Kovalenko</a></p>
-	</footer>	
+	</footer>	-->
 <?php
 	}
 	else {
@@ -247,20 +247,7 @@ if (!isset($_SESSION['user_id'])) {
 				});
 			});
 		</script>
-		<script>
-			/*var data = document.getElementById('note_text');
-			var add_data = document.getElementById('add_data');
-			
-			function check_data() {
-				if (data.innerHTML == "") {
-					data.innerHTML = "Please, enter a data before creating a note";
-					add_data.style.display = "block";
-				}else{
-					//data.style.display = "none";
-				}
-			}*/
-		</script>
 		<script src = "scripts/color_select.js"></script>
-		<script src = "scripts/color_select.js"></script>
+		<!--Max length validation-->
 		<script src = "scripts/brakes.js"></script>			
 </html>
